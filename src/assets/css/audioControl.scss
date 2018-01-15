@@ -1,0 +1,147 @@
+.audio_control {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .hiden {
+      display: none;
+    }
+    .loadAudio {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      z-index: 3;
+      .loadImg {
+        width: .853333rem;
+        height: .853333rem;
+        margin: 0 auto;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+      .loadText {
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+    .play {
+      z-index: 2;
+      .play-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding-bottom: .88rem;
+        // transform: translate(0, -0.3rem);
+        h3 {
+          font-weight: normal;
+          font-size: 16px;
+          color: #fff;
+          text-align: center;
+          width: 6.186667rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .isPlay {
+          margin-top: .053333rem;
+          // line-height: 32rem;
+          // display: inline-flex;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          em.playText {
+            margin-right: .16rem;
+            display: block;
+            height: 12px;
+            font-size: 14px;
+            color: #fff;
+          }
+          em.playImg {
+            display: block;
+            width: 12px;
+            height: 13px;
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+            }
+          }
+        }
+      }
+      .play-pause {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0, -0.3rem);
+        i {
+          font-size: 36px;
+          color: #fff;
+        }
+      }
+      .audio_btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 16px; // padding: .4rem;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 .533333rem .24rem; //  音频列表
+        .audios {
+          width: 100%;
+          .audio-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            .left-btn {
+              i {
+                display: inline-block;
+                font-size: 18px;
+                color: #fff;
+                width: .48rem;
+                height: .533333rem;
+                margin-right: .666667rem;
+                cursor: pointer;
+              }
+            }
+            .bottom_sheet {
+              font-size: 16px;
+              color: #fff;
+            }
+          }
+        } // 单个音频
+        .single-audio {
+          display: flex;
+          // justify-content: space-around;
+          align-items: center;
+          i {
+            display: inline-block;
+            font-size: 16px;
+            color: #fff;
+            width: .48rem;
+            height: .533333rem;
+            margin-right: .613333rem;
+            cursor: pointer;
+          }
+          span {
+            font-size: 16px;
+            color: #fff;
+          }
+          .progress-bar-wrapper {
+            flex: 1;
+            margin: 0 .2rem;
+          }
+        }
+      }
+    }
+  }
+  
