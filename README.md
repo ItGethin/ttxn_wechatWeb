@@ -1,4 +1,4 @@
-# wx-public
+# 微站
 
 > A Vue.js project
 
